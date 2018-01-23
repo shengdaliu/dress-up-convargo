@@ -16,22 +16,35 @@
     <h1>My First Bootstrap Page</h1>
     <p>Resize this responsive page to see the effect!</p>
   </div>
-  <div class="container"> 
+  <div class="container">
     <div class="row">
-      <div id="trucker" class="col-md-6" class="form-group">
-        <input class="name" class="form-control" type="text" placeholder="Trucker name" />
-        <input class="price-by-km" class="form-control" type="number" placeholder="Price by km" />
-        <input class="price-by-cubic" class="form-control" type="number" placeholder="Price by m3" />
+      <div id="trucker" class="col-md-6 form-group">
+        <p>Please insert below the informations about the trucker:</p>
+        <input class="name form-control" type="text" placeholder="Trucker name" />
+        <input class="price-by-km form-control" type="number" placeholder="Price by km" />
+        <input class="price-by-cubic form-control" type="number" placeholder="Price by m3" />
       </div>
-      <div id="shipper" class="col-md-6" class="form-group">
-        <input class="name" class="form-control" type="text" placeholder="Shipper name" />
-        <input class="distance" class="form-control" type="number" placeholder="Distance in km" />
-        <input class="volume" class="form-control" type="number" placeholder="Volume in m3" />
-        <input class="option" class="form-control" type="checkbox" placeholder="Deductible option" />
+      <div id="shipper" class="col-md-6 form-group">
+        <p>Please insert below the informations about the shipper:</p>
+        <input class="name form-control" type="text" placeholder="Shipper name" />
+        <input class="distance form-control" type="number" placeholder="Distance in km" />
+        <input class="volume form-control" type="number" placeholder="Volume in m3" />
+        <label class="btn btn-primary">
+          <input class="option" type="checkbox" placeholder="Deductible option" autocomplete="off"> Deductible option
+        </label>
       </div>
     </div>
-    <button id="compute" type="button" class="btn btn-primary">Compute</button>
-    <div id="actors"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <button id="compute" type="button" class="btn btn-primary float-right">Compute</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="actors"></div>
+      </div>
+    </div>
+
   </div>
   <script src="convargo.js"></script>
   <script src="index.js"></script>
