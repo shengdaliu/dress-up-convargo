@@ -10,22 +10,29 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous"> </head>
-</head>
 
 <body>
-  <div id="trucker">
-    <input class="name" type="text" placeholder="Trucker name" />
-    <input class="price-by-km" type="number" placeholder="Price by km" />
-    <input class="price-by-cubic" type="number" placeholder="Price by m3" />
+  <div class="jumbotron text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p>
   </div>
-  <div id="shipper">
-    <input class="name" type="text" placeholder="Shipper name" />
-    <input class="distance" type="number" placeholder="Distance in km" />
-    <input class="volume" type="number" placeholder="Volume in m3" />
-    <input class="option" type="checkbox" placeholder="Deductible option" />
+  <div class="container"> 
+    <div class="row">
+      <div id="trucker" class="col-md-6" class="form-group">
+        <input class="name" class="form-control" type="text" placeholder="Trucker name" />
+        <input class="price-by-km" class="form-control" type="number" placeholder="Price by km" />
+        <input class="price-by-cubic" class="form-control" type="number" placeholder="Price by m3" />
+      </div>
+      <div id="shipper" class="col-md-6" class="form-group">
+        <input class="name" class="form-control" type="text" placeholder="Shipper name" />
+        <input class="distance" class="form-control" type="number" placeholder="Distance in km" />
+        <input class="volume" class="form-control" type="number" placeholder="Volume in m3" />
+        <input class="option" class="form-control" type="checkbox" placeholder="Deductible option" />
+      </div>
+    </div>
+    <button id="compute" type="button" class="btn btn-primary">Compute</button>
+    <div id="actors"></div>
   </div>
-  <button id="compute">Compute</button>
-  <div id="actors"></div>
   <script src="convargo.js"></script>
   <script src="index.js"></script>
 
