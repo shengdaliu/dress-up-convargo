@@ -13,30 +13,47 @@
 
 <body>
   <div class="jumbotron text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p>
+    <h1>Convargo's transport price calculator</h1>
+    <p>This simulator allows you to calculate the price of Convargo's transportation service.</p>
   </div>
   <div class="container">
     <div class="row">
-      <div id="trucker" class="col-md-6 form-group">
+      <div id="trucker" class="col-md-6">
         <p>Please insert below the informations about the trucker:</p>
-        <input class="name form-control" type="text" placeholder="Trucker name" />
-        <input class="price-by-km form-control" type="number" placeholder="Price by km" />
-        <input class="price-by-cubic form-control" type="number" placeholder="Price by m3" />
+        <div class="form-group">
+          <input class="name form-control" type="text" placeholder="Trucker name" />
+        </div>
+        <div class="form-group">
+          <input class="price-by-km form-control" type="number" placeholder="Price by km" />
+        </div>
+        <div class="form-group">
+          <input class="price-by-cubic form-control" type="number" placeholder="Price by m3" />
+        </div>
       </div>
-      <div id="shipper" class="col-md-6 form-group">
+      <div id="shipper" class="col-md-6">
         <p>Please insert below the informations about the shipper:</p>
-        <input class="name form-control" type="text" placeholder="Shipper name" />
-        <input class="distance form-control" type="number" placeholder="Distance in km" />
-        <input class="volume form-control" type="number" placeholder="Volume in m3" />
-        <label class="btn btn-primary">
-          <input class="option" type="checkbox" placeholder="Deductible option" autocomplete="off"> Deductible option
-        </label>
+        <div class="form-group">
+          <input class="name form-control" type="text" placeholder="Shipper name" />
+        </div>
+        <div class="form-group">
+          <input class="distance form-control" type="number" placeholder="Distance in km" />
+        </div>
+        <div class="form-group">
+          <input class="volume form-control" type="number" placeholder="Volume in m3" />
+        </div>
+        <div class="form-group">
+          <label class="btn btn-primary">
+            <input class="option" type="checkbox" placeholder="Deductible option" autocomplete="off"> Deductible option
+          </label>
+          <small class="form-text text-muted">In case of an accident/theft, convargo applies a 1000€ deductible. The shipper can reduce the deductible amount
+            from 1000€ to 200€ with a deductible option for a few more euros per volume.</small>
+        </div>
+
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <button id="compute" type="button" class="btn btn-primary float-right">Compute</button>
+      <div class="col-md-12 text-center">
+        <button id="compute" type="button" class="btn btn-primary">Compute</button>
       </div>
     </div>
     <div class="row">
