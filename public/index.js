@@ -43,7 +43,6 @@
       tr.className = "actor";
       for (var element in actor) {
         var td = document.createElement("td");
-        td.className = "col-md-4";
         td.appendChild(document.createTextNode(actor[element]))
         tr.appendChild(td);
       }
